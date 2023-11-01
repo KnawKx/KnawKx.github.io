@@ -1,24 +1,47 @@
-<!--My stupid ass can't make a good css so fuck you whoever reading this-->
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Main Page</title>
-        <script src="https://kit.fontawesome.com/f8c6dd1473.js" crossorigin="anonymous"></script>
-        <link rel="icon" href="./images/sakata.jpg" type="image/x-icon" />
-    </head>
-    <h1>Welcome!</h1>
-
-    <h3><i class="fa-solid fa-code"></i>  Scripts</h3>
-    <a href="./Hello.lua">Hello.lua</a>
-
-    <!--<a href="https://KnawKx.github.io/kocmocaddons">Kocmoc Addons</a>
-    <!--<br>
-    <a href="/kocmocdiscord.html">Kocmoc Current Discord</a>
-    <br>
-    <a href="https://discord.gg/Dzb3uHQRcU">How to use Config</a>-->
-    <h3><i class="fa-solid fa-comment"></i>  Contacts</h3>
-    <b><i class="fa-brands fa-discord"></i>  Discord: @relsakata, 783558881036468276</b>
-    <script async src='/cdn-cgi/challenge-platform/h/b/scripts/invisible.js?ts=1652594400'></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'70b9d0c4d87487d8',m:'QVcA32CNijnpLoCnkisYgWmLfvtGXCZRJH6pez2zeK8-1652596128-0-AVaH557+diZDWWGJgequdnXqf3lCgda/M6G5BZhyDVC/cRmOf9XPYyLZ+2PwhcMyeWNLNrkuPWUemvWZMCvECYUTq+Qq4+PxGzLMouQwPK1XjwiM7HG9stYN6QvDGDb/VA==',s:[0x8c4d045607,0x032235bdec],u:'/cdn-cgi/challenge-platform/h/b'}})();</script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+	<title>Main Page</title>
+	<script src="https://kit.fontawesome.com/f8c6dd1473.js" crossorigin="anonymous"></script>
+	<link rel="icon" href="./images/sakata.jpg" type="image/x-icon" />
+	<script>
+		window.addEventListener('DOMContentLoaded', () => {
+			VANTA.NET({
+			  el: '#vanta',
+			  mouseControls: true,
+			  touchControls: true,
+			  gyroControls: false,
+			  minHeight: 200.00,
+			  minWidth: 200.00,
+			  scale: 1.00,
+			  scaleMobile: 1.00
+			})
+			setTimeout(() => {
+			  const main = document.querySelector('main')
+			  main.style.opacity = 1
+			  main.style.filter = 'blur(0px)'
+			}, 1000)
+		  })
+	</script>
+		</head>
+			<body>
+			<div id="vanta"></div>
+			<main>
+			<header>
+			<img src="./images/sakata.jpg" alt="Anurag image" />
+			<h1>@relsakata</h1>
+			</header>
+			<ul>
+				<li><a href="./scripts" target="_blank" rel="noreferrer noopener" ><i class="fa-solid fa-code"></i>  Scripts</a></li>
+				<li><a href="https://github.com/KnawKx/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-github"></i>  GitHub</a></li>
+				<li><a href="https://discord.com/@me/783558881036468276" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-discord"></i>  Discord</a></li>
+			</ul>
+		</main>
+	</body>
 </html>
