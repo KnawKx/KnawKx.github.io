@@ -21,9 +21,9 @@ end
 
 local scriptType = LPH_STRENC("Paid")
 
-ExploitSpecific = "📜"
-Danger = "⚠️"
-Star = "⭐"
+ExploitSpecific = "ðŸ“œ"
+Danger = "âš ï¸"
+Star = "â­"
 
 -- Variables
 local VirtualInputManager = game:GetService('VirtualInputManager')
@@ -93,7 +93,7 @@ local ScreenGui = ScreenInfo:GetScreenGui()
 
 -- getgenv().api = loadstring(game:HttpGet("https://raw.githubusercontent.com/Narnia1337/hi/main/api.lua"))()
 -- getgenv().api = loadstring(game:HttpGet("https://ok-1.f83710296.repl.co/mv3/api.lua"))()
-local bssapi = loadstring(game:HttpGet("https://raw.githubusercontent.com/Narnia1337/hi/main/bssapi.lua"))()
+local bssapi = loadstring(game:HttpGet("https://raw.githubusercontent.com/7BioHazard/mv3/main/bssapi.lua"))()
 local library, api
 do
 local Library = {Enabled = true, SelectedTab = nil};
@@ -3405,7 +3405,7 @@ function getSpawnerCooldownText(spawnerName)
     
     local cooldownText
     if timeLeft == 0 then
-        cooldownText = "✅"
+        cooldownText = "âœ…"
     else
         cooldownText = truncatetime(timeLeft)
     end
@@ -4936,7 +4936,7 @@ function generateWebhookBody(settings)
 			["thumbnail"] = {url = settings.thumbnail or "https://cdn.discordapp.com/icons/1024873171867942933/a_9c03ad84c8288aa059c9cfb3ed65aa9d.gif?size=96"},
 			["fields"] = settings.fields or {},
 			["footer"] = {
-				["text"] = os.date("%x").." • "..os.date("%I")..":"..os.date("%M")..--[[":"..os.date("%S")..]]" "..os.date("%p")
+				["text"] = os.date("%x").." â€¢ "..os.date("%I")..":"..os.date("%M")..--[[":"..os.date("%S")..]]" "..os.date("%p")
 			}
 		}}
 	}
@@ -5587,7 +5587,7 @@ farmingSection = createSection(farmingTab, "Farming")
 
 createDropdown(farmingSection, "Field", fieldsTable, {"autoFarmSettings", "field"}, true).Set(macrov2.autoFarmSettings.field)
 
-createToggle(farmingSection, "Autofarm [⚙]", "autofarm", function(State)
+createToggle(farmingSection, "Autofarm [âš™]", "autofarm", function(State)
     macrov2.toggles.autofarm = State
     -- print(State)
     if State then
